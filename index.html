@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Jordan Bearce - My Projects</title>
+<meta name="description" content="This is a minimalist website that showcases programming projects by Jordan Bearce" />
+<link href="/assets/styles/styles.css" rel="stylesheet" />
+</head>
+<body>
+<header class="header header__site">
+    <h1 class="h1">My Projects</h1>
+</header>
+<main>
+<article>
+    <header class="header header__article">
+        <h2 class="h2">German Sentence Generator (C++)</h2>
+    </header>
+    <p>This is a project I had been thinking about making for a long while. Back in high school, I thought it would be helpful to have completely random exercises, where the student would need to insert the correct word into a sentence. To achieve this, I considered building a program that outputs the same sentnece, in both English and German, but replaces one German word with a blank. So far, my project successfully generates sentences in both English and German. At some point, I plan to revisit this to expand its features, including more complex sentence structures and more streamlined code.</p>
+
+    <p>I started out by building a functional command line application. Once that was complete, I used the code as a base for a new GUI version, using Qt Creator to build a simple 2-Window interface. The main window simply shows the two words side by side, with a button to generate a new word, and a button to open the word lists in a new window.</p>
+
+    <p>The Qt integration was trickier than I expected, not because Qt is challenging to use, but because I had structured the code somewhat naively. I was compiling just the main file, and including all files into that in a cascade. Thanks to this roadblock, I gained first hand experience into why robust project structures are useful. To complete the Qt conversion, I now only include the header files as applicable. Other files are instead compiled into the project as dependencies, which Qt Creator appears to handle automatically.</p>
+
+    <p>If you'd like, you can check out <a href="https://github.com/jbearce/german-sentence-generator" target="_blank">both versions in my GitHub repository.</a> For the CLI version, check the "develop" or "master" branches. For the GUI version, check the "gui-version" branch.</p>
+</article>
+</main>
+<footer>
+    <ul>
+        <li><a href="/#">Home</a></li>
+    </ul>
+</footer>
+</body>
+</html>
