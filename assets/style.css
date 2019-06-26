@@ -1,0 +1,22 @@
+.site__body {
+    margin: 0 auto;
+    max-width: 991px;
+    width: 95%;
+}
+
+.site__header {
+    height: 100px;
+}
+
+.site__header .h1 {
+    height: 100px;
+    line-height: 100px;
+    font-family: sans-serif;
+}
+
+.site__footer {
+    background-color: #d1d7d8;
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
+}
