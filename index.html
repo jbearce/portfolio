@@ -8,18 +8,36 @@
 <header class="header header__site">
     <h1 class="h1">My Projects</h1>
 </header>
-<main>
+<main class="main__site">
 <article class="article">
     <header class="header header__article">
         <h2 class="h2">German Sentence Generator (C++)</h2>
     </header>
+    <img class="image image__article" alt="GUI verison main window" src="assets/media/german-sentence-generator_gui.png" />
     <p>This is a project I had been thinking about making for a long while. Back in high school, I thought it would be helpful to have completely random exercises, where the student would need to insert the correct word into a sentence. To achieve this, I considered building a program that outputs the same sentnece, in both English and German, but replaces one German word with a blank. So far, my project successfully generates sentences in both English and German. At some point, I plan to revisit this to expand its features, including more complex sentence structures and more streamlined code.</p>
 
-    <p>I started out by building a functional command line application. Once that was complete, I used the code as a base for a new GUI version, using Qt Creator to build a simple 2-Window interface. The main window simply shows the two words side by side, with a button to generate a new word, and a button to open the word lists in a new window.</p>
+    <p>I started out by building a functional command line application. Once that was complete, I used the code as a base for a new GUI version, using Qt Creator to build a simple 2-Window interface. The main window simply shows the two generated sentences side by side, with a button to generate a new word, and a button to open the word lists in a new window.</p>
 
-    <p>The Qt integration was trickier than I expected, not because Qt is challenging to use, but because I had structured the code somewhat naively. I was compiling just the main file, and including all files into that in a cascade. Thanks to this roadblock, I gained first hand experience into why robust project structures are useful. To complete the Qt conversion, I now only include the header files as applicable. Other files are instead compiled into the project as dependencies, which Qt Creator appears to handle automatically.</p>
+    <p>The Qt integration was trickier than I expected, not because Qt was unexpectedly challenging, but because I had structured the code somewhat naively. I was compiling just the main file, and including all files into that in a cascade. Thanks to this roadblock, I gained first hand experience into why robust project structures are useful. To complete the Qt conversion, I now only include the header files. Other files are instead compiled into the project as dependencies, which Qt Creator appears to handle automatically.</p>
 
     <p>If you'd like, you can check out <a href="https://github.com/jbearce/german-sentence-generator" target="_blank">both versions in my GitHub repository.</a> For the CLI version, check the "develop" or "master" branches. For the GUI version, check the "gui-version" branch.</p>
+    <footer class="footer footer__article">
+
+    </footer>
+</article>
+<article class="article">
+    <header class="header header__article">
+        <h2 class="h2">Experimenting With NCurses &amp; ASCII Art Games</h2>
+    </header>
+    <img class="image image__article alt="game screen" src="assets/media/minimal-game-engine.png" />
+    <p>I thought it would be fun to work on one of the simplest computer games I could think of&mdash;a game map with obstacles, stored in a 2D array, with a literal "character" that the user can move around the screen.</p>
+
+    <p>When I started this project, I set the goal of using the terminal as my game screen. Since I couldn't find much on how to properly reset the screen using the standard I/O stream, I dove into NCurses. NCurses takes over the terminal window, does stuff, then hands control back over to the I/O stream when finished. While sensible in retrospect, it took me a bit of experimentation to figure out how this sytem functions, and the help of a few generous developers whose forum posts I stumbled across.</p>
+
+    <p>If you'd like, you can check out <a href="https://github.com/jbearce/minimal-game-engine" target="_blank">this project in my GitHub repository.</a></p>
+    <footer class="footer footer__article">
+
+    </footer>
 </article>
 </main>
 <footer class="footer footer__site">

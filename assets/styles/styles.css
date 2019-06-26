@@ -1,4 +1,11 @@
 .body__site {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.body__site .header__site,
+.body__site .main__site {
     margin: 0 auto;
     max-width: 991px;
     width: 95%;
@@ -9,14 +16,33 @@
 }
 
 .header__site .h1 {
+    font-family: sans-serif;
     height: 100px;
     line-height: 100px;
-    font-family: sans-serif;
+}
+
+.article p {
+    font-family: arial;
+    font-size: 20px;
+}
+
+.article .image__article {
+    margin: 20px auto;
+    max-width: 100%;
+    width: auto;
+}
+
+.article:not(:last-of-type) .footer__article {
+    background-color: #9fb2b6;
+    height: 3px;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 .footer__site {
     background-color: #d1d7d8;
     margin: 0;
+    min-height: 45px;
     padding: 10px 0;
     width: 100%;
 }
