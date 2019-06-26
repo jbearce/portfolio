@@ -9,7 +9,7 @@
 .container {
     margin: 0 auto;
     max-width: 95%;
-    width: 1551px;
+    width: 1200px;
 }
 
 .header__site {
@@ -103,7 +103,15 @@
     line-height: 28px;
 }
 
-.container {
-    width: 100%;
-    margin: 0 25px;
+@media screen and (min-width: 991px) {
+    .article .image__article {
+        max-width: 40%;
+        float: right;
+        margin-left: 25px;
+    }
+    .article::after {
+        content: "";
+        display: block;
+        width: 100%;
+    }
 }
