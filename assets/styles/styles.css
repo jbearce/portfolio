@@ -15,6 +15,27 @@
     height: 100px;
 }
 
+.header__site .nav__site {
+    height: 30px;
+    line-height: 30px;
+}
+
+.nav__site ul {
+    list-style: none;
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    font-family: arial;
+}
+
+.nav__site li {
+    display: inline;
+}
+
+.nav__site li a {
+    padding: 5px 10px;
+}
+
 .header__site .h1 {
     font-family: sans-serif;
     height: 100px;

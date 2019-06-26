@@ -6,6 +6,12 @@
 </head>
 <body class="body__site">
 <header class="header header__site">
+    <nav class="nav nav__site">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </nav>
     <h1 class="h1">My Projects</h1>
 </header>
 <main class="main__site">
@@ -14,11 +20,11 @@
         <h2 class="h2">German Sentence Generator (C++)</h2>
     </header>
     <img class="image image__article" alt="GUI verison main window" src="assets/media/german-sentence-generator_gui.png" />
-    <p>This is a project I had been thinking about making for a long while. Back in high school, I thought it would be helpful to have completely random exercises, where the student would need to insert the correct word into a sentence. To achieve this, I considered building a program that outputs the same sentnece, in both English and German, but replaces one German word with a blank. So far, my project successfully generates sentences in both English and German. At some point, I plan to revisit this to expand its features, including more complex sentence structures and more streamlined code.</p>
+    <p>This is a project I had been thinking about making for a long while. Back in high school, I realized that it would be helpful to have completely random exercises, where the student would need to insert the correct word into a sentence. To achieve this, I considered building a program that outputs the same sentnece, in both English and German, but replaces one German word with a blank. So far, my project successfully generates sentences in both English and German. At some point, I plan to revisit this to expand its features, including more complex sentence structures and more streamlined code. The ideal end result would be a framework that could be easily modified to accept a wide number of languages.</p>
 
     <p>I started out by building a functional command line application. Once that was complete, I used the code as a base for a new GUI version, using Qt Creator to build a simple 2-Window interface. The main window simply shows the two generated sentences side by side, with a button to generate a new word, and a button to open the word lists in a new window.</p>
 
-    <p>The Qt integration was trickier than I expected, not because Qt was unexpectedly challenging, but because I had structured the code somewhat naively. I was compiling just the main file, and including all files into that in a cascade. Thanks to this roadblock, I gained first hand experience into why robust project structures are useful. To complete the Qt conversion, I now only include the header files. Other files are instead compiled into the project as dependencies, which Qt Creator appears to handle automatically.</p>
+    <p>The Qt integration was trickier than I expected, not because Qt was unexpectedly challenging, but because I had structured the code somewhat naively. I was compiling just the main file, and including all files into that in a cascade. Thanks to this roadblock, I gained first hand experience into why robust project structures are useful. To complete the Qt conversion, I modified my code structure to only use includes for header files. Other files are instead compiled into the project as dependencies, which Qt Creator appears to handle automatically.</p>
 
     <p>If you'd like, you can check out <a href="https://github.com/jbearce/german-sentence-generator" target="_blank">both versions in my GitHub repository.</a> For the CLI version, check the "develop" or "master" branches. For the GUI version, check the "gui-version" branch.</p>
     <footer class="footer footer__article">
