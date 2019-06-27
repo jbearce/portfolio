@@ -114,7 +114,7 @@
     }
     .article::after {
         content: "";
-        display: block;
+        display: table;
         width: 100%;
     }
 }
