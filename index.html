@@ -1,7 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <title>Jordan Bearce - My Projects</title>
 <meta name="description" content="This is a minimalist website that showcases programming projects by Jordan Bearce" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="assets/styles/styles.css" rel="stylesheet" />
 </head>
 <body class="body__site">
@@ -9,8 +11,8 @@
     <div class="container">
         <nav class="nav nav__site">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
+                <li><a href="index.html" aria-label="View my portfolio">Home</a></li>
+                <li><a href="about.html" aria-label="Learn about me">About Me</a></li>
             </ul>
         </nav>
         <h1 class="h1">Jordan Bearce - Portfolio</h1>
@@ -21,33 +23,33 @@
         <h2 class="h2">My Projects</h2>
         <article class="article">
             <header class="header header__article">
-                <h3 class="h3">German Sentence Generator</h3>
+                <h3 class="h3">German Sentence Generator (C++)</h3>
             </header>
-            <img class="image image__article" alt="GUI verison main window" src="assets/media/german-sentence-generator_gui.png" />
+            <img class="image image__article" alt="German Sentence Generator project GUI verison main window" src="assets/media/german-sentence-generator_gui.png" />
             <p>This is a project I had been thinking about making for a long while. Back in high school, I realized that it would be helpful to have completely random exercises, where the student would need to insert the correct word into a sentence. To achieve this, I considered building a program that outputs the same sentence, in both English and German, but replaces one German word with a blank. So far, my project successfully generates sentences in both English and German. At some point, I plan to revisit this to expand its features, including more complex sentence structures and more streamlined code. The ideal end result would be a framework that could be easily modified to accept a wide number of languages.</p>
             
             <p>I started out by building a functional command line application. Once that was complete, I used the code as a base for a new GUI version, using Qt Creator to build a simple 2-window interface. The main window simply shows the two generated sentences side by side, with a button to generate a new word, and a button to open the word lists in a new window.</p>
             
             <p>The Qt integration was trickier than I expected, not because Qt was unexpectedly challenging, but because I had structured the code somewhat naively. I was compiling just the main file, and including all files into that in a cascade. Thanks to this roadblock, I gained first hand experience into why robust project structures are useful. To complete the Qt conversion, I modified my code structure to only use includes for header files. Other files are instead compiled into the project as dependencies, which Qt Creator appears to handle automatically.</p>
             
-            <p><a href="https://github.com/jbearce/german-sentence-generator" target="_blank">View on GitHub</a>. For the CLI version, check the "develop" or "master" branches. For the GUI version, check the "gui-version" branch.</p>
+            <p><a href="https://github.com/jbearce/german-sentence-generator" target="_blank" aria-label="View my German Sentence Generator project on GitHub" rel="noreferrer">View on GitHub</a>. For the CLI version, check the "develop" or "master" branches. For the GUI version, check the "gui-version" branch.</p>
         </article>
         <article class="article">
             <header class="header header__article">
-                <h3 class="h3">Experimenting With ncurses &amp; ASCII Art Games</h3>
+                <h3 class="h3">Experimenting With ncurses &amp; ASCII Art Games (C++)</h3>
             </header>
-            <img class="image image__article alt="game screen" src="assets/media/minimal-game-engine.png" />
+            <img class="image image__article" alt="ASCII art project game screen" src="assets/media/minimal-game-engine.png" />
             <p>I thought it would be fun to work on one of the simplest computer games I could think of&mdash;a game map with obstacles, stored in a 2D array, with a literal "character" that the user can move around the screen.</p>
             
             <p>When I started this project, I set the limitation of using the terminal as my game screen. Since I couldn't find much on how to properly reset the screen using the standard I/O stream, I dove into ncurses. ncurses takes over the terminal window, does stuff, then hands control back over to the standard I/O stream when finished. While sensible in retrospect, it took me a bit of experimentation to figure out how this sytem functions, and the help of a few generous developers whose forum posts I stumbled across.</p>
             
-            <p><a href="https://github.com/jbearce/minimal-game-engine" target="_blank">View on GitHub</a></p>
+            <p><a href="https://github.com/jbearce/minimal-game-engine" target="_blank" aria-label="View my text-based game on GitHub" rel="noreferrer">View on GitHub</a></p>
         </article>
     </div>
     </main>
     <footer class="footer footer__site">
         <ul class="nav__footer">
-            <li><a href="https://github.com/jbearce/" target="_blank"><img src="assets/media/github.png" /></a></li>
+            <li><a href="https://github.com/jbearce/" target="_blank" aria-label="View my projects on GitHub" rel="noreferrer"><img alt="View my GitHub" src="assets/media/github.png" /></a></li>
         </ul>
     </footer>
 </body>

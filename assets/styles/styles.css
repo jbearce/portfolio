@@ -5,6 +5,7 @@
     padding: 0;
     width: 100%;
     color: #EEEEEE;
+    font-size: 16px;
 }
 
 .body__site a {
@@ -19,9 +20,9 @@
 
 .header__site {
     font-family: sans-serif;
-    height: 150px;
     width: 100%;
     background: #e9694a;
+    padding-bottom: 20px;
 }
 
 .header__site .nav__site {
@@ -32,8 +33,9 @@
     list-style: none;
     height: 40px;
     line-height: 40px;
-    font-size: 22px;
+    font-size: 24px;
     padding-left: 0;
+    text-align: center;
 }
 
 .nav__site li {
@@ -41,8 +43,12 @@
 }
 
 .nav__site li a {
-    padding: 5px 10px;
+    padding: 15px 25px;
     transition: 0.15s;
+}
+
+.nav__site li:first-of-type a {
+    padding-left: 0;
 }
 
 .nav__site li a:hover {
@@ -51,13 +57,16 @@
 
 .header__site .h1 {
     font-family: sans-serif;
-    height: 50px;
     line-height: 50px;
 }
 
 .header__site .h1,
 .header__site a {
     color: #FFFFFF;
+}
+
+.header__site a {
+    font-weight: 700;
 }
 
 .main__site {
@@ -143,5 +152,9 @@
         content: "";
         display: table;
         width: 100%;
+    }
+
+    .header__site ul {
+        text-align: left;
     }
 }
