@@ -11,6 +11,7 @@
 .body__site a {
     color: #E7937E;
     text-decoration: none;
+    transition: 0.15s;
 }
 .container {
     margin: 0 auto;
@@ -72,11 +73,6 @@
 .main__site {
     background: #463a36;
     flex: 1 0 100%;
-}
-
-.main__site a {
-    color: #e9694a;
-    transition: color 0.15s;
 }
 
 .main__site a:hover {
