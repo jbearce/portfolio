@@ -4,8 +4,13 @@
     margin: 0;
     padding: 0;
     width: 100%;
+    color: #EEEEEE;
 }
 
+.body__site a {
+    color: #FF633C;
+    text-decoration: none;
+}
 .container {
     margin: 0 auto;
     max-width: 95%;
@@ -16,7 +21,7 @@
     font-family: sans-serif;
     height: 150px;
     width: 100%;
-    background: #c25421;
+    background: #e9694a;
 }
 
 .header__site .nav__site {
@@ -37,6 +42,11 @@
 
 .nav__site li a {
     padding: 5px 10px;
+    transition: 0.15s;
+}
+
+.nav__site li a:hover {
+    text-decoration: underline;
 }
 
 .header__site .h1 {
@@ -51,8 +61,18 @@
 }
 
 .main__site {
-    background: #EEEEEE;
+    background: #463a36;
     flex: 1 0 100%;
+}
+
+.main__site a {
+    color: #e9694a;
+    transition: color 0.15s;
+}
+
+.main__site a:hover {
+    color: #EEEEEE;
+    text-decoration: underline;
 }
 
 .article p {
@@ -62,22 +82,27 @@
 }
 
 .article .image__article {
-    box-shadow: #4d4b45 2px 2px 8px;
+    box-shadow: #463a36 2px 2px 8px;
     margin: 20px auto;
     max-width: 100%;
     width: auto;
 }
 
 .article:not(:last-of-type) {
-    border-bottom: 3px solid #d1d7d8;
+    border-bottom: 3px solid #EEEEEE;
 }
 
 .footer__site {
-    background-color: #d1d7d8;
+    background-color: #EEEEEE;
     margin: 0;
     min-height: 45px;
     padding: 10px 0;
     width: 100%;
+    overflow: hidden;
+}
+
+.footer__site .nav__footer {
+    text-align: center;
 }
 
 .h1, .h2, .h3, .h4, .h5 {
@@ -92,6 +117,7 @@
 .h2 {
     font-size: 40px;
     line-height: 43px;
+    color: #e9694a;
 }
 .h3 {
     font-size: 35px;
@@ -100,6 +126,7 @@
 .h4 {
     font-size: 30px;
     line-height: 33px;
+    color: #e9694a;
 }
 .h5 {
     font-size: 25x;
