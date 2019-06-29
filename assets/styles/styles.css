@@ -73,6 +73,7 @@
 .main__site {
     background: #463a36;
     flex: 1 0 100%;
+    min-height: 68vh;
 }
 
 .main__site a:hover {
@@ -107,6 +108,7 @@
 }
 
 .footer__site .nav__footer {
+    padding-left: 0;
     text-align: center;
 }
 
