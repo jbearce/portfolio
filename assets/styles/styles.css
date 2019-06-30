@@ -6,6 +6,7 @@
     width: 100%;
     color: #EEEEEE;
     font-size: 16px;
+    min-height: 100vh;
 }
 
 .body__site a {
@@ -73,7 +74,6 @@
 .main__site {
     background: #463a36;
     flex: 1 0 100%;
-    min-height: 68vh;
 }
 
 .main__site a:hover {
